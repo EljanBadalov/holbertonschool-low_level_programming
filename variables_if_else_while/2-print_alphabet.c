@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Prints the entire lowercase English alphabet,
- * each letter followed by a newline.
+ * main - Prints the alphabet in lowercase.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
 	char letter;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		printf("%c\n", letter);
-	}
+		putchar(letter);
+
+	putchar('\n');
 
 	return (0);
 }
