@@ -1,20 +1,13 @@
 #include "main.h"
 
 /**
- * _puts - prints a string followed by a new line
- * @str: pointer to the string to print
- *
- * Return: nothing
+ * _puts - Prints a string to stdout.
+ * @str: The string to be printed.
  */
 void _puts(char *str)
 {
-    int i = 0;
+	while (*str)
+		_putchar(*str++);
 
-    while (str[i] != '\0')  // string bitənə qədər
-    {
-        _putchar(str[i]);  // hər simvolu çap et
-        i++;
-    }
-
-    _putchar('\n');  // sonda yeni sətr
+	_putchar('\n');
 }
